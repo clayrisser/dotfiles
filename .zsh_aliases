@@ -1,0 +1,4 @@
+#!/bin/bash
+
+alias em="emacs -nw"
+alias enpass="bash /opt/enpass/runenpass.sh"
