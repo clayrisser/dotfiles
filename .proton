@@ -15,35 +15,47 @@
 
 
     ;; -----------------------------------
+    ;; config files
+    ;; Get more at github.com/dvcrn/proton/tree/master/src/cljs/proton/layers/config_files
+    ;; -----------------------------------
+    :config-files/docker
+
+
+    ;; -----------------------------------
     ;; tools
     ;; Get more at github.com/dvcrn/proton/tree/master/src/cljs/proton/layers/tools
     ;; -----------------------------------
+    :tools/bookmarks
+    :tools/build
+    :tools/expose
     :tools/git
     :tools/linter
-    ;; :tools/bookmarks
-    ;; :tools/build
-    ;; :tools/minimap
+    :tools/minimap
+    :tools/terminal
 
 
     ;; -----------------------------------
     ;; Languages
     ;; Get more at github.com/dvcrn/proton/tree/master/src/cljs/proton/layers/lang
     ;; -----------------------------------
-    ;; :lang/clojure
+    :lang/clojure
     ;; :lang/csharp
-    ;; :lang/python
-    ;; :lang/julia
-    ;; :lang/latex
-    ;; :lang/elixir
-    ;; :lang/markdown
-    ;; :lang/rust
-    ;; :lang/javascript
+    :lang/css
+    :lang/go
+    :lang/html
+    :lang/javascript
+    :lang/json
+    :lang/less
+    :lang/markdown
+    :lang/python
+    :lang/sass
+    :lang/typescript
 
     ;; -----------------------------------
     ;; Frameworks
     ;; Get more at github.com/dvcrn/proton/tree/master/src/proton/layers/frameworks
     ;; -----------------------------------
-    ;; :frameworks/django
+    :frameworks/django
 
     ;; -----------------------------------
     ;; etc
@@ -58,6 +70,13 @@
   :additional-packages
   [
     ;; :pigments
+    :atom-beautify
+    :emmet
+    :color-picker
+    :pigments
+    :clipboard-plus
+    :wakatime
+    :multi-cursor
   ]
 
   ;; Packages that you want to disable.
@@ -82,6 +101,7 @@
     ["core.audioBeep" false]
     ["core.autoHideMenuBar" true]
     ["core.restorePreviousWindowsOnStart" "yes"]
+    ["core.ignoredNames" [".git", ".hg", ".svn", ".DS_Store", "._*", "Thumbs.db", "desktop.ini"]]
 
     ;; the current default theme
     ["core.themes" ["nucleus-dark-ui" "atom-dark-fusion-syntax"]]
@@ -92,6 +112,12 @@
     ;; proton configuration
     ["proton.core.showTabBar" false]
     ["proton.core.relativeLineNumbers" false]
+
+    ;; atom beautify configuration
+    ["atom-beautify.js.beautify_on_save" true]
+
+    ;; wakatime configuration
+    ["wakatime.apikey" "649cdc2a-f5c1-440e-9086-e1fecfb3702b"]
 
     ;; prefer classic vim mode over vim-mode-plus? Change this to :vim-mode
     ["proton.core.inputProvider" :vim-mode-plus]
@@ -114,5 +140,11 @@
             ;; If you are good with esc, just remove the following line.
             {:selector "atom-text-editor.vim-mode-plus:not(.normal-mode)" :keymap [["f d" "vim-mode-plus:activate-normal-mode"]]}
             ;; {:selector "atom-text-editor.vim-mode:not(.normal-mode)" :keymap [["f d" "vim-mode:activate-normal-mode"]]}
+            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-shift-j" "multi-cursor:expandDown"]]}
+            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-shift-k" "multi-cursor:expandUp"]]}
+            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-h" "multi-cursor:move-last-cursor-left"]]}
+            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-j" "multi-cursor:move-last-cursor-down"]]}
+            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-k" "multi-cursor:move-last-cursor-up"]]}
+            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-l" "multi-cursor:move-last-cursor-right"]]}
   ]
 }
