@@ -77,6 +77,7 @@
     :clipboard-plus
     :wakatime
     :multi-cursor
+    :svn
   ]
 
   ;; Packages that you want to disable.
@@ -140,11 +141,11 @@
             ;; If you are good with esc, just remove the following line.
             {:selector "atom-text-editor.vim-mode-plus:not(.normal-mode)" :keymap [["f d" "vim-mode-plus:activate-normal-mode"]]}
             ;; {:selector "atom-text-editor.vim-mode:not(.normal-mode)" :keymap [["f d" "vim-mode:activate-normal-mode"]]}
-            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-shift-j" "multi-cursor:expandDown"]]}
-            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-shift-k" "multi-cursor:expandUp"]]}
-            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-h" "multi-cursor:move-last-cursor-left"]]}
-            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-j" "multi-cursor:move-last-cursor-down"]]}
-            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-k" "multi-cursor:move-last-cursor-up"]]}
-            {:selector ".platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-l" "multi-cursor:move-last-cursor-right"]]}
+            {:selector ".platform-linux atom-text-editor:not(mini), .platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-shift-j" "multi-cursor:expandDown"]]}
+            {:selector ".platform-linux atom-text-editor:not(mini), .platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-shift-k" "multi-cursor:expandUp"]]}
+            {:selector ".platform-linux atom-text-editor:not(mini), .platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-h" "multi-cursor:move-last-cursor-left"]]}
+            {:selector ".platform-linux atom-text-editor:not(mini), .platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-j" "multi-cursor:move-last-cursor-down"]]}
+            {:selector ".platform-linux atom-text-editor:not(mini), .platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-k" "multi-cursor:move-last-cursor-up"]]}
+            {:selector ".platform-linux atom-text-editor:not(mini), .platform-win32 atom-text-editor:not(mini)" :keymap [["ctrl-alt-shift-l" "multi-cursor:move-last-cursor-right"]]}
   ]
 }
