@@ -1,13 +1,14 @@
 #!/bin/bash
+
 cache=~/.cache/dmenu_run
 freq=~/.dmenu_history
 aliases=~/.zsh_aliases
 source $aliases
 
-case "$1" in 
+case "$1" in
     remove)
-        # To remove a file from history: 
-        # $ dmenu_recent_aliases remove <name> 
+        # To remove a file from history:
+        # $ dmenu_recent_aliases remove <name>
         grep -v "$2" $freq > temp && mv temp $freq
     ;;
     *)

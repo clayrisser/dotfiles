@@ -56,6 +56,8 @@ values."
      docker
      shell
      restclient
+     sql
+     ruby
      (wakatime :variables
      wakatime-api-key  "649cdc2a-f5c1-440e-9086-e1fecfb3702b"
      wakatime-cli-path "/usr/local/bin/wakatime"
