@@ -225,6 +225,7 @@ exec_always feh --bg-scale /home/jamrizzi/Pictures/backgrounds/r2d2-right.jpg
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id synclient MaxTapTime=0
 
+exec nm-applet
 exec bash /opt/Enpass/bin/runenpass.sh
 exec terminator
 exec chromium-browser
