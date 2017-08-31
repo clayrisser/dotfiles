@@ -6,3 +6,6 @@ export GOROOT=/usr/local/go
 export GOPATH=/usr/local/go/projects
 
 export EDITOR=vim
+
+export PYTHONPATH=$PYTHONPATH:./
+
