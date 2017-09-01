@@ -216,7 +216,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # lock
 bindsym $mod+x exec i3lock
 
-assign [class="Chromium"] $workspace7
+assign [class="Google-chrome"] $workspace7
 assign [class="Slack"] $workspace8
 assign [class="Spotify"] $workspace9
 assign [class="Enpass-Desktop"] $workspace10
