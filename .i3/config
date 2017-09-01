@@ -229,3 +229,5 @@ exec nm-applet
 exec bash /opt/Enpass/bin/runenpass.sh
 exec terminator
 exec google-chrome
+exec bash $HOME/.post_i3.sh
+
