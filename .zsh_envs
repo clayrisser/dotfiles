@@ -9,3 +9,5 @@ export EDITOR=vim
 
 export PYTHONPATH=$PYTHONPATH:./
 
+export GITHUB_TOKEN=42b528d3eb394f1173271b5d4f3f9fda4a6f1581
+
