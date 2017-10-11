@@ -49,6 +49,7 @@ values."
      go
      django
      react
+     syntax-checking
      yaml
      python
      github
