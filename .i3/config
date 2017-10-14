@@ -226,6 +226,7 @@ exec_always --no-startup-id compton -f
 exec_always --no-startup-id synclient MaxTapTime=0
 
 exec nm-applet
+exec blueman-applet
 exec bash /opt/Enpass/bin/runenpass.sh
 exec terminator
 exec google-chrome
