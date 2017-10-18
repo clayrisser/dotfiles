@@ -336,7 +336,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
-  (add-to-list 'auto-mode-alist '("\\.js\\'" . react-mode))
+  (add-to-list 'auto-mode-alist '("\\.j\\|tsx?\\'" . react-mode))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
