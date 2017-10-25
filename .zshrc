@@ -57,6 +57,10 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  vi-mode
+  encode64
+  emoji
+  ubuntu
 )
 
 source $ZSH/oh-my-zsh.sh
