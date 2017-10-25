@@ -56,6 +56,7 @@ ZSH_THEME="spaceship"
 plugins=(
   git
   zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -381,7 +382,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh_envs
 source ~/.zsh_aliases
 
