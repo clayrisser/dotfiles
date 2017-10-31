@@ -338,11 +338,8 @@ you should place your code here."
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
   (add-to-list 'auto-mode-alist '("\\.j\\|tsx?\\'" . react-mode))
-  (add-hook 'react-mode-hook 'spacemacs/toggle-fill-column-indicator-on)
-  (add-hook 'emacs-lisp-mode-hook 'spacemacs/toggle-fill-column-indicator-on)
-  (add-hook 'python-mode-hook 'spacemacs/toggle-fill-column-indicator-on)
-  (add-hook 'ruby-mode-hook 'spacemacs/toggle-fill-column-indicator-on)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+
