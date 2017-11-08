@@ -50,6 +50,7 @@ values."
      go
      django
      react
+     c-c++
      syntax-checking
      yaml
      python
