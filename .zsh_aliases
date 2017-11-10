@@ -4,4 +4,7 @@ alias em="emacs -nw"
 alias enpass="bash /opt/Enpass/bin/runenpass.sh"
 alias sen="docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM tomastomecek/sen"
 alias venv="source ./env/bin/activate"
+alias postman="/opt/postman/Postman"
+alias tizen="~/.tizen-studio/tools/ide/bin/tizen"
+alias tizen-studio="~/.tizen-studio/ide/TizenStudio.sh"
 
