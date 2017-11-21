@@ -7,4 +7,5 @@ alias venv="source ./env/bin/activate"
 alias postman="/opt/postman/Postman"
 alias tizen="~/.tizen-studio/tools/ide/bin/tizen"
 alias tizen-studio="~/.tizen-studio/ide/TizenStudio.sh"
+alias google-chrome="google-chrome --remote-debugging-port=9222"
 
