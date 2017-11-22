@@ -91,7 +91,7 @@ SPACESHIP_PROMPT_ORDER=(
   dotnet
   ember
   kubecontext
-  battery
+# battery
   exec_time
   line_sep
   vi_mode
