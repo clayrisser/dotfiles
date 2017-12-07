@@ -389,3 +389,5 @@ source ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
 source ~/.zsh_envs
 source ~/.zsh_aliases
 
+fortune | cowsay | lolcat
+
