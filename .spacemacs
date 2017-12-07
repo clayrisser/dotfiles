@@ -51,6 +51,7 @@ values."
      django
      react
      c-c++
+     php
      syntax-checking
      yaml
      python
