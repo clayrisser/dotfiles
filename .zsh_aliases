@@ -11,4 +11,6 @@ alias google-chrome="google-chrome --remote-debugging-port=9222"
 alias pbcopy="xsel --clipboard --input"
 alias pbpaste="xsel --clipboard --output"
 alias starwars="telnet towel.blinkenlights.nl"
+alias sonar-scanner="/opt/sonar-scanner/bin/sonar-scanner"
+alias studio="/opt/android-studio/bin/"
 
