@@ -57,7 +57,7 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
-  vi-mode
+# vi-mode
   encode64
   emoji
   ubuntu
