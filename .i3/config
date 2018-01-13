@@ -200,8 +200,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Print screen
-bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
-bindsym Mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
+bindsym Print exec shutter -s
 
 # move workspace to left and right monitors
 bindsym $mod+Shift+bracketleft move workspace to output left
@@ -226,7 +225,7 @@ exec_always --no-startup-id compton -f
 exec_always --no-startup-id synclient MaxTapTime=0
 
 exec nm-applet
-exec oneko
+# exec oneko
 exec blueman-applet
 exec bash /opt/Enpass/bin/runenpass.sh
 exec terminator

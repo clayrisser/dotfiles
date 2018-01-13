@@ -80,6 +80,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
    '(
+     php-eldoc
      editorconfig
      )
    ;; A list of packages that cannot be updated.
