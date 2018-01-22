@@ -80,8 +80,8 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
    '(
-     php-eldoc
      editorconfig
+     prettier-js
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -341,6 +341,10 @@ you should place your code here."
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
   (add-to-list 'auto-mode-alist '("\\.j\\|tsx?\\'" . react-mode))
+  (add-hook 'js2-mode-hook 'prettier-js-mode)
+  (add-hook 'web-mode-hook 'prettier-js-mode)
+  (add-hook 'react-mode-hook 'prettier-js-mode)
+  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

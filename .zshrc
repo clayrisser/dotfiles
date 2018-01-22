@@ -394,3 +394,8 @@ fortune | cowsay | lolcat
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+if [ "$(pidof i3)" = "" ]; then
+  exec startx
+fi
+
