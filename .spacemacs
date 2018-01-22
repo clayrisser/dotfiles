@@ -344,7 +344,6 @@ you should place your code here."
   (add-hook 'js2-mode-hook 'prettier-js-mode)
   (add-hook 'web-mode-hook 'prettier-js-mode)
   (add-hook 'react-mode-hook 'prettier-js-mode)
-  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
