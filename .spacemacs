@@ -342,7 +342,6 @@ you should place your code here."
   (editorconfig-mode 1)
   (add-to-list 'auto-mode-alist '("\\.j\\|tsx?\\'" . react-mode))
   (add-hook 'js2-mode-hook 'prettier-js-mode)
-  (add-hook 'web-mode-hook 'prettier-js-mode)
   (add-hook 'react-mode-hook 'prettier-js-mode)
 )
 
