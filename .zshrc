@@ -60,4 +60,5 @@ source ~/.zsh_envs
 source ~/.zsh_aliases
 
 fortune | cowsay | lolcat
+echo && ls
 
