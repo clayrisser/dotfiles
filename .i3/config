@@ -224,6 +224,7 @@ exec_always feh --bg-scale ~/.background.jpg
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id synclient MaxTapTime=0
 
+exec bash ~/.resolutions/1500x1000.sh
 exec nm-applet
 # exec oneko
 exec blueman-applet
