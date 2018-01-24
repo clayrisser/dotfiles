@@ -55,9 +55,12 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 source $ZSH/oh-my-zsh.sh
-source ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
-source ~/.zsh_envs
-source ~/.zsh_aliases
+source $HOME/.zsh_envs
+source $HOME/.zsh_aliases
+source $HOME/.rvm/scripts/rvm
+source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 fortune | cowsay | lolcat
 echo && ls
