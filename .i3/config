@@ -203,6 +203,7 @@ exec nm-applet
 exec blueman-applet
 exec bash /opt/Enpass/bin/runenpass.sh
 exec terminator
+exec terminator -e ranger
 exec google-chrome
 exec fluxgui
 exec bash $HOME/.post_i3.sh

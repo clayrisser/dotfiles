@@ -1,17 +1,26 @@
 #!/bin/bash
 
+# golang
 export PATH=$PATH:/usr/local/go/bin
-
 export GOROOT=/usr/local/go
 export GOPATH=/usr/local/go/projects
 
+# java
 export JAVA_HOME=/usr/java/jdk1.8.0_162
 export JRE_HOME=/usr/java/jdk1.8.0_162/jre
 export PATH=$PATH:/usr/java/jdk1.8.0_162/bin
+
+# android studio
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# swift
+export PATH=$PATH:/opt/swift/usr/bin
+
+# python
+export PYTHONPATH=$PYTHONPATH:./
+
+# vim
 export EDITOR=vim
 
-export PYTHONPATH=$PYTHONPATH:./
