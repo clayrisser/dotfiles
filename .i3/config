@@ -172,20 +172,21 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # print screen
-bindsym Print exec shutter -s
+bindsym Print exec shutter -f
+bindsym F7 exec shutter -s
 
 # move workspace to left and right monitors
 bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
 
 # media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # lock
-bindsym $mod+x exec i3lock
+bindsym $mod+x exec i3lock-next "Input Password" "Hurmit Nerd Font Mono" 24
 
 # assignments
 assign [class="Google-chrome"] $workspace7
@@ -198,13 +199,16 @@ exec_always --no-startup-id compton -f
 exec_always --no-startup-id synclient MaxTapTime=0
 
 exec bash ~/.resolutions/1500x1000.sh
+exec --no-startup-id xset dpms 610
+exec --no-startup-id xautolock -time 10 -locker 'i3lock-next "Input Password" "Hurmit Nerd Font Mono" 24'
 exec nm-applet
 # exec oneko
 exec blueman-applet
 exec bash /opt/Enpass/bin/runenpass.sh
 exec terminator
-exec terminator -e ranger
+exec sleep 2 && terminator -e ranger
 exec google-chrome
 exec fluxgui
 exec bash $HOME/.post_i3.sh
+exec sleep 3 && i3 restart
 
