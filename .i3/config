@@ -195,7 +195,6 @@ assign [class="Spotify"] $workspace9
 assign [class="Enpass-Desktop"] $workspace10
 
 exec_always feh --bg-scale ~/.background.jpg
-exec_always --no-startup-id compton -f
 exec_always --no-startup-id synclient MaxTapTime=0
 
 exec bash ~/.resolutions/1500x1000.sh
@@ -205,10 +204,11 @@ exec nm-applet
 # exec oneko
 exec blueman-applet
 exec bash /opt/Enpass/bin/runenpass.sh
-exec terminator
-exec sleep 2 && terminator -e ranger
 exec google-chrome
 exec fluxgui
 exec bash $HOME/.post_i3.sh
+exec compton -f
+exec sleep 1 && terminator
+exec sleep 2 && terminator -e ranger
 exec sleep 3 && i3 restart
 
