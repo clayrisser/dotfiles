@@ -50,9 +50,9 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 export NVM_DIR="$HOME/.nvm"
+export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-export PATH="$PATH:$HOME/.rvm/bin"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_envs
@@ -64,6 +64,7 @@ source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || tru
 
 eval "$(fasd --init auto 2>/dev/null || true)"
 
+nvm use 8 &>/dev/null || true
 fortune | cowsay | lolcat
 echo && ls
 
