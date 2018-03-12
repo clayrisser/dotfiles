@@ -14,4 +14,5 @@ alias starwars="telnet towel.blinkenlights.nl"
 alias sonar-scanner="/opt/sonar-scanner/bin/sonar-scanner"
 alias android-studio="/opt/android-studio/bin/studio.sh"
 alias serve="python -m SimpleHTTPServer"
+alias robo3t="/opt/robo3t/bin/robo3t"
 
