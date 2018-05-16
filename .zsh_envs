@@ -18,9 +18,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # swift
 export PATH=$PATH:/opt/swift/usr/bin
 
-# python
-export PYTHONPATH=$PYTHONPATH:./
-
 # vim
 export EDITOR=vim
 
+# genymotion
+export PATH=$PATH:/opt/genymobile/genymotion/tools

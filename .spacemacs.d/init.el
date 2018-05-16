@@ -163,6 +163,7 @@
 (defun dotspacemacs/user-config ()
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
+  (add-to-list 'auto-mode-alist '("\\.dat\\'" . ledger-mode))
   (add-to-list 'auto-mode-alist '("\\.\\\(j\\|t\\\)sx?\\'" . rjsx-mode))
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . rjsx-mode))
   (add-hook 'js2-mode-hook 'prettier-js-mode)
