@@ -177,7 +177,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # lock
-bindsym $mod+x exec i3lock-next "Input Password" "Hurmit Nerd Font Mono" 24
+bindsym $mod+x exec bash ~/.config/i3/lock.sh
 
 # assignments
 assign [class="Google-chrome"] $workspace7

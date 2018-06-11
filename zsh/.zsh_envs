@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export GOROOT="/usr/local/go"
+export ANDROID_HOME="$HOME/Android/Sdk"
+export JAVA_HOME="/usr/java/jdk1.8.0_162"
+export JRE_HOME="/usr/java/jdk1.8.0_162/jre"
+export GOPATH="/usr/local/go/projects"
+export EDITOR="vim"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
