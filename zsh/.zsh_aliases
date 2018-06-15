@@ -1,6 +1,7 @@
 #!/bin/bash
 
 alias android-studio="/opt/android-studio/bin/studio.sh"
+alias balsamiq="/usr/share/playonlinux/playonlinux --run Balsamiq %F"
 alias em="emacs -nw"
 alias enpass="bash /opt/Enpass/bin/runenpass.sh"
 alias genymotion="/opt/genymobile/genymotion/genymotion"
@@ -13,8 +14,7 @@ alias sen="docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM tomas
 alias serve="python -m SimpleHTTPServer"
 alias sonar-scanner="/opt/sonar-scanner/bin/sonar-scanner"
 alias starwars="telnet towel.blinkenlights.nl"
-alias tizen-studio="~/.tizen-studio/ide/TizenStudio.sh"
 alias tizen="~/.tizen-studio/tools/ide/bin/tizen"
+alias tizen-studio="~/.tizen-studio/ide/TizenStudio.sh"
 alias vectormagic="playonlinux --run vectormagic"
 alias venv="source ./env/bin/activate"
-
