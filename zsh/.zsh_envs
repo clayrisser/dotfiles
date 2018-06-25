@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export PATH="$PATH:/opt/swift/usr/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$ANDROID_HOME/tools/bin"
 export PATH="$PATH:$ANDROID_HOME/tools"
 export GOROOT="/usr/local/go"
 export JAVA_HOME="/usr/java/jdk1.8.0_162"
@@ -9,7 +9,6 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 export JRE_HOME="/usr/java/jdk1.8.0_162/jre"
 export GOPATH="/usr/local/go/projects"
 export EDITOR="vim"
-export PATH="$PATH:/opt/genymobile/genymotion/tools"
 export PATH="$PATH:/usr/local/go/bin"
 export GOBIN="/usr/local/go/bin"
-export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:/opt/genymobile/genymotion/tools"
