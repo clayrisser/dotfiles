@@ -171,6 +171,7 @@
   (add-hook 'js2-mode-hook 'prettier-js-mode)
   (add-hook 'json-mode-hook 'prettier-js-mode)
   (add-hook 'rjsx-mode-hook 'prettier-js-mode)
+  (add-hook 'typescript-mode-hook 'prettier-js-mode)
   (eval-after-load 'rjsx-mode
     '(add-hook 'js-mode-hook #'add-node-modules-path))
   (eval-after-load 'js2-mode
