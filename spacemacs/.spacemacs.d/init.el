@@ -33,7 +33,6 @@
      helm
      html
      imenu-list
-     itome-react
      java
      javascript
      lua
@@ -48,6 +47,7 @@
      prodigy
      python
      ranger
+     react
      restclient
      ruby
      ruby-on-rails
@@ -166,15 +166,14 @@
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
   (add-to-list 'auto-mode-alist '("\\.dat\\'" . ledger-mode))
-  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-mode))
-  (add-to-list 'auto-mode-alist '("\\.vue\\'" . js2-mode))
-  (add-hook 'js2-mode-hook 'prettier-js-mode)
-  (add-hook 'json-mode-hook 'prettier-js-mode)
+  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . rjsx-mode))
   (add-hook 'rjsx-mode-hook 'prettier-js-mode)
+  (add-hook 'json-mode-hook 'prettier-js-mode)
   (add-hook 'typescript-mode-hook 'prettier-js-mode)
-  (eval-after-load 'rjsx-mode
+  (eval-after-load 'typescript-mode
     '(add-hook 'js-mode-hook #'add-node-modules-path))
-  (eval-after-load 'js2-mode
+  (eval-after-load 'react-mode
     '(add-hook 'js-mode-hook #'add-node-modules-path))
   (eval-after-load 'javascript-mode
     '(add-hook 'js-mode-hook #'add-node-modules-path))
