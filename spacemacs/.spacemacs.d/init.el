@@ -21,7 +21,6 @@
      docker
      elfeed
      emacs-lisp
-     extra-langs
      fasd
      finance
      floobits
@@ -38,10 +37,8 @@
      lua
      markdown
      nginx
-     nlinum
      org
      pandoc
-     pdf-tools
      php
      plantuml
      prodigy
