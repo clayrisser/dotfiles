@@ -5,7 +5,8 @@
 # exec oneko &
 # fluxgui &
 
-bash ~/.resolutions/1500x1000.sh
+xmodmap ~/.Xmodmap
+bash ~/.screenlayout/1440x900.sh
 compton -f &
 polybar main &
 sleep 1
@@ -16,4 +17,3 @@ sleep 1
 terminator -e ranger &
 bash /opt/Enpass/bin/runenpass.sh &
 google-chrome &
-
