@@ -5,7 +5,7 @@
 # exec oneko &
 # fluxgui &
 
-xmodmap ~/.Xmodmap
+# xmodmap ~/.Xmodmap
 bash ~/.screenlayout/1440x900.sh
 compton -f &
 polybar main &

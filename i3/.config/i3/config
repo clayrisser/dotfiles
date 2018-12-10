@@ -187,5 +187,6 @@ assign [class="Enpass-Desktop"] $workspace10
 
 exec_always feh --bg-scale ~/.background.jpg
 exec_always --no-startup-id synclient MaxTapTime=0
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 exec bash ~/.config/i3/start.sh

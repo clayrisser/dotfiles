@@ -10,7 +10,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/main]
-;monitor = ${env:MONITOR:eDP1}
+;monitor = eDP-1
 background = ${colors.background}
 border-color = #00000000
 border-size = 0
