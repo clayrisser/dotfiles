@@ -59,8 +59,8 @@ source $HOME/.zsh_envs
 source $HOME/.zsh_aliases
 source $HOME/.rvm/scripts/rvm 2>/dev/null || true
 source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
 source /opt/emsdk/emsdk_env.sh &>/dev/null || true
 
 eval "$(fasd --init auto 2>/dev/null || true)"
