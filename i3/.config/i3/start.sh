@@ -11,6 +11,7 @@ compton -f &
 polybar main &
 sleep 1
 nm-applet &
+cbatticon &
 blueman-applet &
 terminator &
 sleep 1
