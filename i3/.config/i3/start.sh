@@ -13,6 +13,7 @@ sleep 1
 nm-applet &
 cbatticon &
 blueman-applet &
+/opt/piavpn/bin/pia-client &
 terminator &
 sleep 1
 terminator -e ranger &
