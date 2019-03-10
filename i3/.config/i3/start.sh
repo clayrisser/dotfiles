@@ -16,5 +16,5 @@ blueman-applet &
 terminator &
 sleep 1
 terminator -e ranger &
-bash /opt/Enpass/bin/runenpass.sh &
+bash /opt/enpass/Enpass &
 google-chrome &
