@@ -164,8 +164,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # print screen
-bindsym Print exec shutter -f
-bindsym F7 exec shutter -s
+bindsym Print exec gnome-screenshot -ci
 
 # move workspace to left and right monitors
 bindsym $mod+Shift+bracketleft move workspace to output left
