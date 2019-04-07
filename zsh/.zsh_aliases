@@ -2,10 +2,12 @@
 
 alias android-studio="/opt/android-studio/bin/studio.sh"
 alias balsamiq="/usr/share/playonlinux/playonlinux --run Balsamiq %F"
+alias bfg="java -jar /opt/bfg/bfg.jar"
 alias em="emacs -nw"
 alias enpass="/opt/enpass/Enpass"
 alias genymotion="/opt/genymobile/genymotion/genymotion"
 alias google-chrome="google-chrome --remote-debugging-port=9222"
+alias k="kubectl"
 alias pbcopy="xsel --clipboard --input"
 alias pbpaste="xsel --clipboard --output"
 alias pia="/opt/piavpn/bin/pia-client"

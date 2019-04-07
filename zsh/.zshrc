@@ -52,6 +52,7 @@ SPACESHIP_PROMPT_ORDER=(
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#[[ -s "/home/codejamninja/.gvm/scripts/gvm" ]] && source "/home/codejamninja/.gvm/scripts/gvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 source $ZSH/oh-my-zsh.sh
