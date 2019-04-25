@@ -55,13 +55,15 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #[[ -s "/home/codejamninja/.gvm/scripts/gvm" ]] && source "/home/codejamninja/.gvm/scripts/gvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh_envs
-source $HOME/.zsh_aliases
-source $HOME/.rvm/scripts/rvm 2>/dev/null || true
 source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+source $HOME/.rvm/scripts/rvm 2>/dev/null || true
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
+source $HOME/.zsh_aliases
+source $HOME/.zsh_envs
+source $HOME/.zsh_functions
+source $HOME/.zsh_sources
+source $ZSH/oh-my-zsh.sh
 source /opt/emsdk/emsdk_env.sh &>/dev/null || true
 
 eval "$(fasd --init auto 2>/dev/null || true)"
@@ -70,4 +72,3 @@ nvm use 8 &>/dev/null || true
 fortune | cowsay | lolcat
 echo && ls
 
-source $HOME/.zsh_sources

@@ -9,6 +9,7 @@
 bash ~/.screenlayout/1440x900.sh
 compton -f &
 polybar main &
+browserpass &
 sleep 1
 nm-applet &
 cbatticon &
