@@ -5,13 +5,11 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-# vi-mode
-  encode64
   emoji
+  encode64
+  git
   ubuntu
+# vi-mode
 )
 
 SPACESHIP_PROMPT_ORDER=(
