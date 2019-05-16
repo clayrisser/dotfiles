@@ -7,7 +7,7 @@
 
 # xmodmap ~/.Xmodmap
 bash ~/.screenlayout/1440x900.sh
-compton -f &
+compton -f --config ~/.config/compton.conf &
 polybar main &
 browserpass &
 sleep 1
