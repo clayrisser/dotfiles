@@ -8,6 +8,7 @@
 # xmodmap ~/.Xmodmap
 bash ~/.screenlayout/1440x900.sh
 compton -f --config ~/.config/compton.conf &
+redshift -l 30.267153:-97.743057 &
 polybar main &
 browserpass &
 sleep 1
