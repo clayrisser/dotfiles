@@ -68,5 +68,5 @@ eval "$(fasd --init auto 2>/dev/null || true)"
 
 nvm use 8 &>/dev/null || true
 fortune | cowsay | lolcat
-echo && ls
+echo && ls ~/Desktop
 
