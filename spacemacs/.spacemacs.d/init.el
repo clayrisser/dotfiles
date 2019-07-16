@@ -17,10 +17,8 @@
      cscope
      csharp
      csv
-     deft
      django
      docker
-     elfeed
      emacs-lisp
      fasd
      finance
@@ -60,7 +58,6 @@
      systemd
      terraform
      themes-megapack
-     twitter
      typescript
      typography
      version-control
@@ -162,12 +159,12 @@
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
   (add-to-list 'auto-mode-alist '("\\.dat\\'" . ledger-mode))
-  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . react-mode))
-  (add-to-list 'auto-mode-alist '("\\.vue\\'" . react-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . rjsx-mode))
   (add-hook 'javascript-mode-hook 'add-node-modules-path)
   (add-hook 'json-mode-hook 'prettier-js-mode)
-  (add-hook 'react-mode-hook 'add-node-modules-path)
-  (add-hook 'react-mode-hook 'prettier-js-mode)
+  (add-hook 'rjsx-mode-hook 'add-node-modules-path)
+  (add-hook 'rjsx-mode-hook 'prettier-js-mode)
   (add-hook 'typescript-mode-hook 'add-node-modules-path)
   (add-hook 'typescript-mode-hook 'prettier-js-mode)
   (xclip-mode 1)
