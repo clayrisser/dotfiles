@@ -1,12 +1,16 @@
 #!/bin/bash
 
+PROXY_HOST=$(gsettings get org.gnome.system.proxy.http host)
+
 export ANDROID_HOME="$HOME/.android/Sdk"
 export DEBEMAIL="jam@codejam.ninja"
 export DEBFULLNAME="Jam Risser"
 export EDITOR="vim"
 export GOBIN="/usr/local/go/bin"
-export GOROOT="/usr/local/go"
 export GOPATH="$GOROOT/default"
+export GOROOT="/usr/local/go"
+export HTTPS_PROXY="${PROXY_HOST:1:-1}:$(gsettings get org.gnome.system.proxy.http port)"
+export HTTP_PROXY="${PROXY_HOST:1:-1}:$(gsettings get org.gnome.system.proxy.http port)"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
