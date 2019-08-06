@@ -35,6 +35,7 @@
      javascript
      lua
      markdown
+     neotree
      nginx
      org
      pandoc
