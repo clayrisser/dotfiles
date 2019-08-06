@@ -157,6 +157,7 @@
 (defun dotspacemacs/user-init ()
   (setq exec-path-from-shell-arguments '("-l")))
 (defun dotspacemacs/user-config ()
+  (kill-buffer "*spacemacs*")
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
   (add-to-list 'auto-mode-alist '("\\.dat\\'" . ledger-mode))
