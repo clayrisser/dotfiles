@@ -97,6 +97,7 @@
    dotspacemacs-scratch-mode 'text-mode
    dotspacemacs-themes
    '(
+     twilight-bright
      spacemacs-dark
      spacemacs-light
      )
@@ -204,7 +205,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("d91ef4e714f05fff2070da7ca452980999f5361209e679ee988e3c432df24347" "62408b3adcd05f887b6357e5bd9221652984a389e9b015f87bbc596aba62ba48" "4e63466756c7dbd78b49ce86f5f0954b92bf70b30c01c494b37c586639fa3f6f" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+    ("cab317d0125d7aab145bc7ee03a1e16804d5abdfa2aa8738198ac30dc5f7b569" "8dce5b23232d0a490f16d62112d3abff6babeef86ae3853241a85856f9b0a6e7" "d91ef4e714f05fff2070da7ca452980999f5361209e679ee988e3c432df24347" "62408b3adcd05f887b6357e5bd9221652984a389e9b015f87bbc596aba62ba48" "4e63466756c7dbd78b49ce86f5f0954b92bf70b30c01c494b37c586639fa3f6f" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
