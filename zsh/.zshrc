@@ -70,3 +70,7 @@ nvm use 8 &>/dev/null || true
 fortune | cowsay | lolcat
 echo && ls ~/Desktop
 
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/codejamninja/Projects/astexplorer.app/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/codejamninja/Projects/astexplorer.app/node_modules/tabtab/.completions/electron-forge.zsh
