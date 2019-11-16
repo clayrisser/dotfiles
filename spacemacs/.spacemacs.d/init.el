@@ -167,8 +167,8 @@
   (add-hook 'json-mode-hook 'prettier-js-mode)
   (add-hook 'rjsx-mode-hook 'add-node-modules-path)
   (add-hook 'rjsx-mode-hook 'prettier-js-mode)
-  (add-hook 'typescript-mode-hook 'add-node-modules-path)
   (add-hook 'typescript-mode-hook 'prettier-js-mode)
+  (add-hook 'typescript-tsx-mode-hook 'prettier-js-mode)
   (xclip-mode 1)
   )
 
