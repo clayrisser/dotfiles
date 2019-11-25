@@ -53,6 +53,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #[[ -s "/home/codejamninja/.gvm/scripts/gvm" ]] && source "/home/codejamninja/.gvm/scripts/gvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
+source $HOME/.cargo/env
 source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
 source $HOME/.rvm/scripts/rvm 2>/dev/null || true
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
@@ -74,4 +75,3 @@ source /etc/captain-hook/git.sh
 export PATH="/home/codejamninja/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
