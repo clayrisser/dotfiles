@@ -65,7 +65,6 @@
      wakatime
      windows-scripts
      yaml
-     ycmd
      )
    dotspacemacs-additional-packages
    '(
@@ -152,6 +151,7 @@
    dotspacemacs-search-tools '("ag" "pt" "ack" "grep")
    dotspacemacs-default-package-repository nil
    dotspacemacs-whitespace-cleanup 'trailing
+   package-check-signature nil
    ))
 
 (defun dotspacemacs/user-init ()

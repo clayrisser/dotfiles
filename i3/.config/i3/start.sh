@@ -6,8 +6,10 @@
 # fluxgui &
 
 # xmodmap ~/.Xmodmap
-bash ~/.screenlayout/1440x900.sh
-compton -f --config ~/.config/compton.conf &
+bash ~/.active_screenlayout
+sleep 1
+feh --bg-scale ~/.background.jpg
+# compton -f --config ~/.config/compton.conf &
 redshift -l 30.267153:-97.743057 &
 polybar main &
 browserpass &
@@ -19,6 +21,4 @@ pulseaudio --start &
 /opt/piavpn/bin/pia-client &
 terminator &
 sleep 1
-terminator -e ranger &
-bash /opt/enpass/Enpass &
-google-chrome &
+terminator &

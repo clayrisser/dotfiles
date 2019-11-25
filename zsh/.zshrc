@@ -70,3 +70,8 @@ nvm use 8 &>/dev/null || true
 fortune | cowsay | lolcat
 echo && ls ~/Desktop
 
+source /etc/captain-hook/git.sh
+export PATH="/home/codejamninja/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
