@@ -14,6 +14,9 @@ gaps outer 0
 # start a terminal
 bindsym $mod+Return exec terminator
 
+# start system monitor
+bindsym Ctrl+Mod1+Delete --release exec gnome-system-monitor
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -176,6 +179,8 @@ bindsym XF86AudioPause exec playerctl play
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+exec synclient TapButton1=0 TapButton2=0 TapButton3=0
+
 # lock
 bindsym $mod+x exec bash ~/.config/i3/lock.sh
 
@@ -185,7 +190,11 @@ assign [class="Slack"] $workspace8
 assign [class="Spotify"] $workspace9
 assign [class="Enpass-Desktop"] $workspace10
 
+for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
+
 exec_always --no-startup-id synclient MaxTapTime=0
+exec_always --no-startup-id xinput set-prop 13 "Synaptics Tap Time" 0
+exec_always --no-startup-id xinput set-prop 13 "Synaptics Tap Action" 0
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 exec bash ~/.config/i3/start.sh

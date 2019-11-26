@@ -8,43 +8,47 @@ plugins=(
   emoji
   encode64
   git
+  helm
   ubuntu
+  zsh-completions
 # vi-mode
 )
 
 SPACESHIP_PROMPT_ORDER=(
-  time
-  user
-  dir
-  host
-  git
-  hg
-  package
-  node
-  ruby
-  elixir
-  xcode
-  swift
-  golang
-  php
-  rust
-  haskell
-  julia
-  docker
-  aws
-  venv
-  conda
-  pyenv
-  dotnet
-  ember
-  kubecontext
-  exec_time
-  line_sep
-# battery
-  vi_mode
-  jobs
-  exit_code
-  char
+  time          # Time stampts section
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  hg            # Mercurial section (hg_branch  + hg_status)
+  package       # Package version
+  node          # Node.js section
+  ruby          # Ruby section
+  elm           # Elm section
+  elixir        # Elixir section
+  xcode         # Xcode section
+  swift         # Swift section
+  golang        # Go section
+  php           # PHP section
+  rust          # Rust section
+  haskell       # Haskell Stack section
+  julia         # Julia section
+  docker        # Docker section
+  aws           # Amazon Web Services section
+  venv          # virtualenv section
+  conda         # conda virtualenv section
+  pyenv         # Pyenv section
+  dotnet        # .NET section
+  ember         # Ember.js section
+  kubecontext   # Kubectl context section
+  terraform     # Terraform workspace section
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
 )
 
 export NVM_DIR="$HOME/.nvm"
@@ -75,3 +79,8 @@ source /etc/captain-hook/git.sh
 export PATH="/home/codejamninja/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+source <(minikube completion zsh)
+source <(kubectl completion zsh)
