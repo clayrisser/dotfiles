@@ -10,7 +10,7 @@ plugins=(
   git
   helm
   ubuntu
-# zsh-completions
+  zsh-completions
 # vi-mode
 )
 
