@@ -84,3 +84,6 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 source <(minikube completion zsh)
 source <(kubectl completion zsh)
+
+# dotstow autocomplete setup
+DOTSTOW_AC_ZSH_SETUP_PATH=/home/codejamninja/.cache/dotstow/autocomplete/zsh_setup && test -f $DOTSTOW_AC_ZSH_SETUP_PATH && source $DOTSTOW_AC_ZSH_SETUP_PATH;
