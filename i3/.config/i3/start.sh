@@ -13,6 +13,7 @@ feh --bg-scale ~/.background.jpg &
 browserpass &
 redshift -l 30.267153:-97.743057 &
 i3-msg restart &
+bluetoothctl &
 
 # START PROGRAMS
 # exec oneko &
