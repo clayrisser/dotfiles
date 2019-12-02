@@ -5,7 +5,7 @@
    dotspacemacs-ask-for-lazy-installation t
    dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers")
    dotspacemacs-configuration-layers
-   '(
+   '(asciidoc
      rust
      ansible
      asm
