@@ -15,6 +15,7 @@ alias pbcopy="xsel --clipboard --input"
 alias pbpaste="xsel --clipboard --output"
 alias pia="/opt/piavpn/bin/pia-client"
 alias postman="/opt/postman/Postman"
+alias r=reset
 alias rdm="/opt/redis-desktop-manager/rdm.sh"
 alias redshift-start="redshift -l 30.267153:-97.743057"
 alias redshift-stop="kill $(ps -A | grep redshift | awk '{print $1}')"
