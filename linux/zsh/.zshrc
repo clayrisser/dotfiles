@@ -88,3 +88,9 @@ source <(kubectl completion zsh)
 
 # dotstow autocomplete setup
 DOTSTOW_AC_ZSH_SETUP_PATH=/home/codejamninja/.cache/dotstow/autocomplete/zsh_setup && test -f $DOTSTOW_AC_ZSH_SETUP_PATH && source $DOTSTOW_AC_ZSH_SETUP_PATH;
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi

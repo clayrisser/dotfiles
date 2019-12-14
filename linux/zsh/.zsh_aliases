@@ -14,6 +14,7 @@ alias nexus="emulator @Nexus_5X_API_29_x86"
 alias pbcopy="xsel --clipboard --input"
 alias pbpaste="xsel --clipboard --output"
 alias pia="/opt/piavpn/bin/pia-client"
+alias popcorn-time="cd /home/codejamninja/Projects/popcorn-desktop && npm run start"
 alias postman="/opt/postman/Postman"
 alias r=reset
 alias rdm="/opt/redis-desktop-manager/rdm.sh"
