@@ -66,6 +66,7 @@ source $HOME/.zsh_aliases
 source $HOME/.zsh_envs
 source $HOME/.zsh_functions
 source $HOME/.zsh_sources
+source $HOME/.zsh_secrets
 source $ZSH/oh-my-zsh.sh
 source /opt/emsdk/emsdk_env.sh &>/dev/null || true
 

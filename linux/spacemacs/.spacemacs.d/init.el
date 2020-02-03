@@ -49,6 +49,7 @@
      restclient
      ruby
      ruby-on-rails
+     rust
      search-engine
      semantic
      shell
