@@ -11,7 +11,8 @@ sleep 1
 # xmodmap ~/.Xmodmap
 feh --bg-scale ~/.background.jpg &
 browserpass &
-redshift -l 30.267153:-97.743057 &
+xrandr --output eDP-1 --brightness .4
+# redshift -l 30.267153:-97.743057 &
 i3-msg restart &
 bluetoothctl &
 
