@@ -58,7 +58,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 source $HOME/.cargo/env
-source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+source $ZSH/oh-my-zsh.sh
 source $HOME/.rvm/scripts/rvm 2>/dev/null || true
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
