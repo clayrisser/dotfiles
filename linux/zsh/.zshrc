@@ -10,12 +10,13 @@ plugins=(
   git
   helm
   ubuntu
+  zsh-autosuggestions
   zsh-completions
-# vi-mode
+  zsh-syntax-highlighting
 )
 
 SPACESHIP_PROMPT_ORDER=(
-  time          # Time stampts section
+  time          # Time stamps section
   user          # Username section
   dir           # Current directory section
   host          # Hostname section
@@ -24,7 +25,6 @@ SPACESHIP_PROMPT_ORDER=(
   package       # Package version
   node          # Node.js section
   ruby          # Ruby section
-  elm           # Elm section
   elixir        # Elixir section
   xcode         # Xcode section
   swift         # Swift section
@@ -40,7 +40,7 @@ SPACESHIP_PROMPT_ORDER=(
   pyenv         # Pyenv section
   dotnet        # .NET section
   ember         # Ember.js section
-  kubecontext   # Kubectl context section
+  kubectl       # Kubectl context section
   terraform     # Terraform workspace section
   exec_time     # Execution time
   line_sep      # Line break
@@ -50,6 +50,9 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
+SPACESHIP_KUBECTL_SHOW=true
+SPACESHIP_KUBECTL_VERSION_SHOW=false
+SPACESHIP_KUBECONTEXT_SHOW=true
 
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -60,8 +63,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source $HOME/.cargo/env
 source $ZSH/oh-my-zsh.sh
 source $HOME/.rvm/scripts/rvm 2>/dev/null || true
-source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
-source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
+# source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
+# source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
 source $HOME/.zsh_aliases
 source $HOME/.zsh_envs
 source $HOME/.zsh_functions
