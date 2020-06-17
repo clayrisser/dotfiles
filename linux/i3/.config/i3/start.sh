@@ -1,6 +1,7 @@
 #!/bin/bash
 
-bash ~/.active_screenlayout
+sleep 2
+bash ~/.active_resolution
 sleep 1
 
 # START SERVICES
@@ -22,8 +23,9 @@ sleep 1
 polybar main &
 /opt/piavpn/bin/pia-client &
 blueman-applet &
-cbatticon &
+mate-power-manager &
 nm-applet &
-pulseaudio --start &
 terminator &
 terminator &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+pulseaudio --kill && pulseaudio --start &

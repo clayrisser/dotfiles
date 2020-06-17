@@ -2,17 +2,16 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#ffffff"
-    font = FiraMono Nerd Font 12
+    font = UbuntuMono Nerd Font 14
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_lines = 5000
     scrollback_infinite = True
     use_system_font = False
-    use_theme_colors = True
     copy_on_selection = True
 [layouts]
   [[default]]
