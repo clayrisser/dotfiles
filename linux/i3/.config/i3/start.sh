@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sleep 2
-bash ~/.active_resolution
+bash ~/.active_resolution.sh
 sleep 1
 
 # START SERVICES

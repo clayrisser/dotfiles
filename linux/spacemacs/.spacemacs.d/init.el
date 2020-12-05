@@ -35,7 +35,7 @@
      java
      javascript
      lua
-;;   lsp
+     lsp
      markdown
      neotree
      nginx
