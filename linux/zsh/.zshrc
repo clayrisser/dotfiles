@@ -57,7 +57,7 @@ SPACESHIP_KUBECONTEXT_SHOW=true
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-#[[ -s "/home/codejamninja/.gvm/scripts/gvm" ]] && source "/home/codejamninja/.gvm/scripts/gvm"
+#[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 source $HOME/.cargo/env
@@ -80,7 +80,7 @@ nvm use 8 &>/dev/null || true
 echo moo | cowsay | lolcat
 echo && ls ~/Desktop
 
-export PATH="/home/codejamninja/.pyenv/bin:$PATH"
+export PATH="$PATH:$HOME/.pyenv/bin"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -89,11 +89,10 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 source <(minikube completion zsh)
 source <(kubectl completion zsh)
 
-# dotstow autocomplete setup
-DOTSTOW_AC_ZSH_SETUP_PATH=/home/codejamninja/.cache/dotstow/autocomplete/zsh_setup && test -f $DOTSTOW_AC_ZSH_SETUP_PATH && source $DOTSTOW_AC_ZSH_SETUP_PATH;
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
+
+DOTSTOW_AC_ZSH_SETUP_PATH=$HOME/.cache/dotstow/autocomplete/zsh_setup && test -f $DOTSTOW_AC_ZSH_SETUP_PATH && source $DOTSTOW_AC_ZSH_SETUP_PATH;
