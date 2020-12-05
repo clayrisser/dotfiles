@@ -80,7 +80,6 @@ nvm use 8 &>/dev/null || true
 echo moo | cowsay | lolcat
 echo && ls ~/Desktop
 
-source /etc/captain-hook/git.sh
 export PATH="/home/codejamninja/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
@@ -98,4 +97,3 @@ if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/pa
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
-source /etc/captain-hook/git.sh
