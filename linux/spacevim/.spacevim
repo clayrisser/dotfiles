@@ -1,0 +1,14 @@
+" let g:spacevim_plug_home = '~/.vim/plugged'
+
+let g:spacevim_layers = [ \
+  'fzf', \
+  'better-defaults', \
+  'which-key'
+]
+
+function! UserInit()
+endfunction
+
+function! UserConfig()
+  set nonumber
+endfunction
