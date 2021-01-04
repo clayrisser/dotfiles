@@ -5,6 +5,7 @@ alias apache-directory-studio="/opt/ApacheDirectoryStudio/ApacheDirectoryStudio"
 alias balsamiq="/usr/share/playonlinux/playonlinux --run Balsamiq %F"
 alias bfg="java -jar /opt/bfg/bfg.jar"
 alias c=clear
+alias em="emacs -nw"
 alias enpass="/opt/enpass/Enpass"
 alias fiddler="mono /opt/fiddler/Fiddler.exe"
 alias genymotion="/opt/genymobile/genymotion/genymotion"

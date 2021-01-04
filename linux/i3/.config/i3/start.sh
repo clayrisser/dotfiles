@@ -29,3 +29,4 @@ terminator &
 terminator &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 pulseaudio --kill && pulseaudio --start &
+xrandr --output eDP-1 --brightness .8
