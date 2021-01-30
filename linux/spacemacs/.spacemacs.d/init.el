@@ -162,7 +162,14 @@
 (defun dotspacemacs/user-init ()
   (setq exec-path-from-shell-arguments '("-l")))
 (defun dotspacemacs/user-config ()
-  ;; (setq warning-minimum-level :emergency)
+  (with-eval-after-load 'treemacs
+    (setq lsp-enable-file-watchers nil)
+    ;; (defun treemacs-ignore-gitignore (file _)
+    ;;   (string= file ".gitignore"))
+    ;; (push #'treemacs-ignore-gitignore treemacs-ignored-file-predicates)
+    (treemacs-git-mode 'deferred)
+    (lsp-treemacs-sync-mode 1)
+    (treemacs-display-current-project-exclusively))
   (kill-buffer "*spacemacs*")
   (setq recentf-save-file (format "/tmp/recentf.%s" (emacs-pid)))
   (editorconfig-mode 1)
@@ -176,12 +183,8 @@
   (add-hook 'rjsx-mode-hook 'prettier-js-mode)
   (add-hook 'typescript-mode-hook 'prettier-js-mode)
   (add-hook 'typescript-tsx-mode-hook 'prettier-js-mode)
-  (xclip-mode 1)
-  (treemacs-select-window)
-  (treemacs-git-mode 'deferred)
-  (treemacs-display-current-project-exclusively)
-  (lsp-treemacs-sync-mode 1)
-  )
+  ;; (treemacs-select-window)
+  (xclip-mode 1))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
