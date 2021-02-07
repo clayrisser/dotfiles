@@ -22,7 +22,7 @@ bluetoothctl &
 sleep 1
 polybar main &
 /opt/piavpn/bin/pia-client &
-blueman-applet &
+# blueman-applet &
 mate-power-manager &
 nm-applet &
 terminator &
