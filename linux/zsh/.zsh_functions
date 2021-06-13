@@ -1,9 +1,15 @@
 perm() {
-	if [ ! -f $1 ] && [ ! -d $1 ]; then
-		echo "perm: cannot access '$1': No such file or directory"
-	else
-		PERM=$(ls -ld $1 | sed 's| .*||g')
-		echo $PERM $(unix-permissions convert.octal $PERM) \
-			$(unix-permissions convert.symbolic $PERM)
+	_PERM_PERM=$1
+	if [ -f $1 ] || [ -d $1 ]; then
+		_PERM_PERM=$(ls -ld $1 | sed 's| .*||g')
 	fi
+	_PERM_STAT=$(unix-permissions convert.stat $_PERM_PERM)
+	_PERM_STATUS=$?
+	if [ "$_PERM_STATUS" != "0" ]; then
+		printf "$_PERM_STAT" >&2
+		return $_PERM_STATUS
+	fi
+	echo $_PERM_STAT \
+		$(unix-permissions convert.octal $_PERM_PERM) \
+		$(unix-permissions convert.symbolic $_PERM_PERM)
 }
