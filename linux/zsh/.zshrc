@@ -75,14 +75,15 @@ source /opt/emsdk/emsdk_env.sh &>/dev/null || true
 
 eval "$(fasd --init auto 2>/dev/null || true)"
 
-nvm use 8 &>/dev/null || true
+nvm use 12 &>/dev/null || true
 # fortune | cowsay | lolcat
 echo moo | cowsay | lolcat
 echo && ls ~/Desktop
 
 export PATH="$PATH:$HOME/.pyenv/bin"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init --path)"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
@@ -96,3 +97,5 @@ if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/pa
 if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
 
 DOTSTOW_AC_ZSH_SETUP_PATH=$HOME/.cache/dotstow/autocomplete/zsh_setup && test -f $DOTSTOW_AC_ZSH_SETUP_PATH && source $DOTSTOW_AC_ZSH_SETUP_PATH;
+
+eval "$(direnv hook zsh)"

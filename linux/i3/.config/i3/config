@@ -12,7 +12,7 @@ floating_modifier $mod
 # gaps outer 0
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec alacritty
 
 # start system monitor
 bindsym Ctrl+Mod1+Delete --release exec gnome-system-monitor

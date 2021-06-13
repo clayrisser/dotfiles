@@ -25,3 +25,5 @@ export PATH="$PATH:/opt/mssql-tools/bin"
 export PATH="$PATH:/snap/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH=$PATH:~/.kube/plugins/jordanwilson230
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/sbin
