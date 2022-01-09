@@ -1,0 +1,24 @@
+configuration {
+    combi-hide-mode-prefix: true;
+    combi-modi: "drun,run,ssh";
+    drun-match-fields: "name,generic,exec,categories";
+    font: "UbuntuMono Nerd Font Bold 14";
+    kb-row-select: "Tab";
+    kb-row-tab: "";
+    location: 1;
+    matching: "fuzzy";
+    modi: "drun,run,ssh,combi";
+    show-icons: true;
+    terminal: "foot sh -c";
+}
+
+@theme "Arc-Dark"
+
+listview {
+    scrollbar: false;
+    columns: 9;
+    lines: 2;
+}
+window {
+    width: 100%;
+}
