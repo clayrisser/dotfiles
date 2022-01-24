@@ -1,29 +1,5 @@
-#!/bin/bash
-
-PROXY_HOST=$(gsettings get org.gnome.system.proxy.http host)
+#!/usr/bin/zsh
 
 export ANDROID_SDK_ROOT="$HOME/.android/sdk"
-export DEBEMAIL="jam@codejam.ninja"
-export DEBFULLNAME="Jam Risser"
 export EDITOR="vim"
-export GTK_USE_PORTAL=1
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-export QT_QPA_PLATFORMTHEME="gnome"
-export QT_STYLE_OVERRIDE="adwaita"
-# export HTTPS_PROXY="${PROXY_HOST:1:-1}:$(gsettings get org.gnome.system.proxy.http port)"
-# export HTTP_PROXY="${PROXY_HOST:1:-1}:$(gsettings get org.gnome.system.proxy.http port)"
-export PATH="$(yarn global bin):$PATH"
-export PATH="$PATH:/usr/sbin"
-export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
-export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
-export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
-export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
-export PATH="$PATH:$HOME/.deno/bin"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
-export PATH="$PATH:/opt/mssql-tools/bin"
-export PATH="$PATH:/snap/bin"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export PATH=$PATH:~/.kube/plugins/jordanwilson230
-export PATH=$PATH:/usr/local/sbin
-export PATH=$PATH:/sbin
+export JAVA_HOME="/usr/lib/jvm/java-1.17.0-openjdk-amd64"
