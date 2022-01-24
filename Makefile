@@ -1,7 +1,11 @@
 .DEFAULT_GOAL := install
+
+DOTFILES_PATH ?= $(HOME)/.dotfiles
+
 APT ?= apt-get
 SUDO ?= sudo
 STOW ?= stow
+
 NULL := /dev/null
 NOFAIL := 2>$(NULL) || true
 NOOUT := >$(NULL) 2>$(NULL)
@@ -125,20 +129,24 @@ endif
 
 DOTFILES := $(shell ls $(PLATFORM) $(NOFAIL)) \
 	$(shell ls $(FLAVOR) $(NOFAIL)) \
-	$(shell ls global $(NOFAIL)) \
-	haha
+	$(shell ls global $(NOFAIL))
 
 .PHONY: install
 install: $(DOTFILES)
 
 .PHONY: $(DOTFILES)
-$(DOTFILES): /bin/stow
+$(DOTFILES): /bin/stow $(DOTFILES_PATH)/.git/HEAD
 	@PACKAGE_DIR='$(call get_package_dir,$@)' && \
 		[ "$$PACKAGE_DIR" = "" ] && true || \
-		stow -t $(HOME) -d $$PACKAGE_DIR $@
+		echo stow -t $(HOME) -d $$PACKAGE_DIR $(ARGS) $@
 
 define get_package_dir
-$(shell (((ls $(FLAVOR) $(NOFAIL)) | grep -qE "^$1$$") && echo $(FLAVOR)) || \
+$(shell cd $(DOTFILES_PATH) && \
+	cd $(shell (((ls $(FLAVOR) $(NOFAIL)) | grep -qE "^$1$$") && echo $(FLAVOR)) || \
 	(((ls $(PLATFORM) $(NOFAIL)) | grep -qE "^$1$$") && echo $(PLATFORM)) || \
-	(((ls global $(NOFAIL)) | grep -qE "^$1$$") && echo global) || true)
+	(((ls global $(NOFAIL)) | grep -qE "^$1$$") && echo global) || true) && \
+	pwd)
 endef
+
+$(DOTFILES_PATH)/.git/HEAD:
+	@cp -r $(CURDIR) $(DOTFILES_PATH)
