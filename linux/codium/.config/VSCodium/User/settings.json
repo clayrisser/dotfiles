@@ -50,5 +50,6 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontFamily": "'UbuntuMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "gitlens.codeLens.enabled": false
 }
