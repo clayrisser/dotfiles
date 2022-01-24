@@ -138,7 +138,7 @@ install: $(DOTFILES)
 $(DOTFILES): /bin/stow $(DOTFILES_PATH)/.git/HEAD
 	@PACKAGE_DIR='$(call get_package_dir,$@)' && \
 		[ "$$PACKAGE_DIR" = "" ] && true || \
-		echo stow -t $(HOME) -d $$PACKAGE_DIR $(ARGS) $@
+		stow -t $(HOME) -d $$PACKAGE_DIR $(ARGS) $@
 
 define get_package_dir
 $(shell cd $(DOTFILES_PATH) && \
