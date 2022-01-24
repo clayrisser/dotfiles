@@ -7,6 +7,7 @@ $HOME/.deno/bin
 $HOME/.krew/bin
 $HOME/.local/bin
 $HOME/.phpenv/bin
+$PYENV_ROOT/bin
 /opt/mssql-tools/bin
 /sbin
 /usr/games

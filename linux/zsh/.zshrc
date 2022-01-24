@@ -42,9 +42,5 @@ source $HOME/.zsh_secrets 2>/dev/null || true
 source $HOME/.zsh_sources
 source $ZSH/oh-my-zsh.sh
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
 # fortune | cowsay | lolcat
 echo moo | cowsay | lolcat

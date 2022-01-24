@@ -1,4 +1,6 @@
 #!/usr/bin/zsh
 
+eval "$(phpenv init -)"
+eval "$(pyenv init --path)"
 source $HOME/.cargo/env
-# source $HOME/.gvm/scripts/gvm
+source $HOME/.gvm/scripts/gvm
