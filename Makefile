@@ -138,14 +138,14 @@ install: $(DOTFILES)
 $(DOTFILES): /bin/stow $(DOTFILES_PATH)/.git/HEAD
 	@PACKAGE_DIR='$(call get_package_dir,$@)' && \
 		[ "$$PACKAGE_DIR" = "" ] && true || \
-		echo stow -t $(HOME) -d $$PACKAGE_DIR $(ARGS) $@
+		stow -t $(HOME) -d $$PACKAGE_DIR $(ARGS) $@
 
 define get_package_dir
 $(shell cd $(DOTFILES_PATH) && \
-	cd $(shell (((ls $(FLAVOR) $(NOFAIL)) | grep -qE "^$1$$") && echo $(FLAVOR)) || \
+	PACKAGE_DIR=$(shell (((ls $(FLAVOR) $(NOFAIL)) | grep -qE "^$1$$") && echo $(FLAVOR)) || \
 	(((ls $(PLATFORM) $(NOFAIL)) | grep -qE "^$1$$") && echo $(PLATFORM)) || \
 	(((ls global $(NOFAIL)) | grep -qE "^$1$$") && echo global) || true) && \
-	pwd)
+	([ "$$PACKAGE_DIR" = "" ] && true || (cd $$PACKAGE_DIR && pwd)))
 endef
 
 $(DOTFILES_PATH)/.git/HEAD:
