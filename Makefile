@@ -135,7 +135,7 @@ install: $(DOTFILES)
 $(DOTFILES): /bin/stow
 	@PACKAGE_DIR='$(call get_package_dir,$@)' && \
 		[ "$$PACKAGE_DIR" = "" ] && true || \
-		echo stow -t $(HOME) -d $$PACKAGE_DIR $@
+		stow -t $(HOME) -d $$PACKAGE_DIR $@
 
 define get_package_dir
 $(shell (((ls $(FLAVOR) $(NOFAIL)) | grep -qE "^$1$$") && echo $(FLAVOR)) || \
