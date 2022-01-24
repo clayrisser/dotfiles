@@ -20,6 +20,8 @@ plugins=(
     helm
     node
     nvm
+    ruby
+    rust
     zsh-autocomplete
     zsh-completions
     zsh-syntax-highlighting
@@ -44,3 +46,5 @@ source $ZSH/oh-my-zsh.sh
 
 # fortune | cowsay | lolcat
 echo moo | cowsay | lolcat
+
+source $HOME/.rvm/scripts/rvm
