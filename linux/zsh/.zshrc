@@ -31,6 +31,7 @@ SPACESHIP_KUBECTL_SHOW=true
 SPACESHIP_KUBECTL_VERSION_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=true
 
+source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_envs
 (cat .path.list 2>/dev/null || true) | \
     sed 's|\s*#\s*.*||g' | \
@@ -38,13 +39,10 @@ source $HOME/.zsh_envs
     sed 's|\(.*\)|export PATH="\1:$PATH"|g' > \
     $HOME/.path.sh
 source $HOME/.path.sh
+source $HOME/.zsh_sources
 source $HOME/.zsh_aliases
 source $HOME/.zsh_functions
 source $HOME/.zsh_secrets 2>/dev/null || true
-source $HOME/.zsh_sources
-source $ZSH/oh-my-zsh.sh
 
 # fortune | cowsay | lolcat
 echo moo | cowsay | lolcat
-
-source $HOME/.rvm/scripts/rvm

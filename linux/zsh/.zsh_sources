@@ -4,3 +4,5 @@ eval "$(phpenv init -)"
 eval "$(pyenv init --path)"
 source $HOME/.cargo/env
 source $HOME/.gvm/scripts/gvm
+source $HOME/.rvm/scripts/rvm
+export PATH="$HOME/.rvm/gems/$(rvm_silence_path_mismatch_check_flag=1 rvm list | grep -E '^=' | head -n1 | cut -d' ' -f 2)/bin:$PATH"
