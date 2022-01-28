@@ -11,6 +11,7 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(
     autojump
+    aws
     debian
     direnv
     emoji

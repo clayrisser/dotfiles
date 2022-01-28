@@ -7,6 +7,7 @@ $ANDROID_SDK_ROOT/tools/bin
 $HOME/.deno/bin
 $HOME/.krew/bin
 $HOME/.local/bin
+$HOME/.nix-profile/bin
 $HOME/.phpenv/bin
 $PYENV_ROOT/bin
 /opt/mssql-tools/bin

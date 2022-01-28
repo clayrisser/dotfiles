@@ -1,5 +1,6 @@
 #!/usr/bin/zsh
 
+alias awsp=_awsp
 alias c=clear
 alias code=codium
 alias k=kubectl
