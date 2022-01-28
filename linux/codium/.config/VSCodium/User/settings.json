@@ -55,5 +55,6 @@
   "workbench.editor.showTabs": true,
   "editor.glyphMargin": true,
   "workbench.activityBar.visible": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none"
 }
