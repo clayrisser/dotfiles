@@ -1,60 +1,59 @@
 {
-    "vim.easymotion": true,
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
         {
-            "before": [
-                "<space>"
-            ],
-            "commands": [
-                "vspacecode.space"
-            ]
-        },
-        {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "vspacecode.space",
-                {
-                    "command": "whichkey.triggerKey",
-                    "args": "m"
-                }
-            ]
+          "command": "whichkey.triggerKey",
+          "args": "m"
         }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<space>"
-            ],
-            "commands": [
-                "vspacecode.space"
-            ]
-        },
-        {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "vspacecode.space",
-                {
-                    "command": "whichkey.triggerKey",
-                    "args": "m"
-                }
-            ]
-        }
-    ],
-    "snyk.yesWelcomeNotification": false,
-    "snyk.token": "f8608440-b1fc-4158-b0e3-23a1dbba00e9",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.fontFamily": "'UbuntuMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 16,
-    "gitlens.codeLens.enabled": false,
-    "redhat.telemetry.enabled": false,
-    "editor.formatOnSave": true,
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      ]
     }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    }
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontFamily": "'UbuntuMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontSize": 16,
+  "gitlens.codeLens.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "diffEditor.codeLens": true,
+  "vscode-as-git-mergetool.settingsAssistantOnStartup": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.lineNumbers": "on",
+  "workbench.editor.showTabs": true,
+  "editor.glyphMargin": true,
+  "workbench.activityBar.visible": true,
+  "editor.formatOnSave": true
 }

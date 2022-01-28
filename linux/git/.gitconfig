@@ -1,24 +1,29 @@
-[user]
-	name = Clay Risser
-	email = email@clayrisser.com
+[init]
+	defaultBranch = main
 
 [pull]
 	rebase = false
 
-[merge]
-	tool = ediff
+[user]
+	email = clayrisser@gmail.com
+	name = Clay Risser
 
-[mergetool.ediff]
-    cmd = emacs -nw --eval \"\
-(progn\
-  (defun ediff-write-merge-buffer ()\
-    (let ((file ediff-merge-store-file))\
-      (set-buffer ediff-buffer-C)\
-      (write-region (point-min) (point-max) file)\
-      (message \\\"Merge buffer saved in: %s\\\" file)\
-      (set-buffer-modified-p nil)\
-      (sit-for 1)))\
-  (setq ediff-quit-hook 'kill-emacs\
-        ediff-quit-merge-hook 'ediff-write-merge-buffer)\
-  (ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\"\
-                                   \\\"$BASE\\\" nil \\\"$MERGED\\\"))\"
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[merge]
+	tool = code
+	conflictstyle = merge
+[mergetool]
+	keepTemporaries = false
+	keepBackup = false
+[mergetool "code"]
+	cmd = /usr/share/codium/codium \"$BASE\"
+
+[diff]
+	tool = code
+[difftool "code"]
+	cmd = /usr/share/codium/codium --wait --diff \"$LOCAL\" \"$REMOTE\"
