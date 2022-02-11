@@ -79,6 +79,9 @@ gaps outer 0
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # printscreen
+    bindsym Print exec bash $HOME/.config/sway/screenshot.sh
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
