@@ -24,7 +24,7 @@ plugins=(
     nvm
     ruby
     rust
-    zsh-autocomplete
+    zsh-autosuggestions
     zsh-completions
     zsh-syntax-highlighting
 )
