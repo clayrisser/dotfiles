@@ -19,6 +19,9 @@ plugins=(
     git
     golang
     helm
+    kubectl
+    kubectx
+    minikube
     mvn
     node
     nvm
@@ -45,6 +48,8 @@ source $HOME/.zsh_sources
 source $HOME/.zsh_aliases
 source $HOME/.zsh_functions
 source $HOME/.zsh_secrets 2>/dev/null || true
+
+autoload -U compinit && compinit
 
 # fortune | cowsay | lolcat
 echo moo | cowsay | lolcat
